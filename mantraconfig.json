@@ -1,0 +1,33 @@
+{
+  "CurrentVersion": "1",
+  "ComponentsLocations": [
+    "components"
+  ],
+  "Apps": {
+    "mainapp": {
+      "Port": 8080,
+      "ActiveServices": ["get"]
+    }
+  },
+  "Injections": {},
+  "ComponentsConfig": {
+    "core": {
+      "croncleanupevent": "* */5 * * * *",
+      "cronbackupevent": "0 */5 * * * *",
+      "baseurl": "http://localhost:8080/"
+    }
+  },
+  "DefaultComponents": [
+    "randomapi"
+  ],
+  "Entities": {
+    "default": {
+      "provider": "sqlite",
+      "databasepath": "./randomresapidb.db"
+    }
+  },
+  "InactiveComponents": [],
+  "GlobalTemplateVars": {
+    "global-sitename": "Random value Rest API Mantra app"
+  }
+}

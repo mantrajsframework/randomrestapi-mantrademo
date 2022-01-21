@@ -1,0 +1,6 @@
+{
+    "name": "randomapi",
+    "description": "REST Api to generate random values",
+    "version": "1.0.0",
+    "dependencies": []
+}
